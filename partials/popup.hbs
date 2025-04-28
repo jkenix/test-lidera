@@ -1,0 +1,56 @@
+<div class="popup-join popup-join__wrap">
+  <div class="popup-join-content">
+
+    <form
+      class="popup-join-form"
+      enctype="multipart/form-data"
+      method="post"
+      id="form"
+      onsubmit="submitForm(event)"
+      action="send.php"
+    >
+      <a href="/" class="header__logo logo">
+        <img src="/img/dlex-logo.svg" width="125" height="25" alt="dlex logo" />
+      </a>
+
+      <h2 class="popup__title section-title">
+        Join the club
+      </h2>
+      <p class="popup__desc">
+        Subscribe and Get an Extra 25% Off on your first purchase.
+      </p>
+      <input
+        class="popup__email"
+        type="email"
+        id="email"
+        name="email"
+        pattern="^\S+@\S+\.\S+$"
+        placeholder="Email address"
+        oninvalid="this.setCustomValidity('Пожалуйста, введите корректный адрес электронной почты.')"
+        onchange="this.setCustomValidity('')"
+        required
+      />
+      <button class="btn btn__default btn__subscribe popup__btn" type="submit">
+        Subscribe
+      </button>
+
+      <span class="popup__disclaimer">By signing up, you agree to Privacy Policy
+        and Terms of Use.</span>
+    </form>
+
+    <div class="popup-join-img">
+      <img
+        src="/img/popup/popup-img.webp"
+        width="526"
+        height="657"
+        alt="popup image"
+      />
+    </div>
+
+  </div>
+
+  <button class="btn popup__close">
+    <img src="/img/icons/close-popup.svg" width="22" height="22" alt="" />
+  </button>
+
+</div>

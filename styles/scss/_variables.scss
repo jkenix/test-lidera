@@ -1,0 +1,40 @@
+// grid
+$sm: 575.98px;
+$md: 767.98px;
+$lg: 991.98px;
+$xl: 1199.98px;
+$xxl: 1399.98px;
+// $xxxl: 1599.98px;
+// $hd: 1919.98px;
+
+// Fonts
+$main-font: "Poppins", Arial, sans-serif;
+
+// Bg
+$body-bg-color: #ffffff;
+
+// Colors
+$dark: rgb(0, 0, 0);
+$grayscale-1: rgba(18, 17, 39, 0.72);
+$grayscale-2: rgb(18, 17, 39);
+
+$indigo-500: rgb(68, 75, 211);
+
+$gray: rgb(137, 137, 137);
+
+$white: rgb(255, 255, 255);
+$white-2: rgb(217, 217, 217);
+
+// Links
+$link-hover: rgb(68, 75, 211);
+$link-pressed: gray;
+
+// Border radius
+$border-rad-1: 6px;
+$border-rad-2: 10px;
+
+// Box shadows
+$box-shadow-menu: 0px 0px 40px 0px rgba(0, 0, 0, 0.06);
+
+// Transition
+$trans-default: all 0.1s ease-in-out;

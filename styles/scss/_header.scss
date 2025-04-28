@@ -1,0 +1,189 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.header {
+  position: relative;
+  z-index: 20;
+
+  &.active {
+    @media (max-width: $lg) {
+      background: linear-gradient(90deg, #3581d5 50%, #000 100%);
+      height: calc(100vh + 100px);
+    }
+  }
+
+  &--scroll {
+    position: fixed;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 32px 0px;
+
+    &.active {
+      @media (max-width: $lg) {
+        flex-direction: column;
+
+        .header__buttons {
+          display: flex;
+
+          animation: flip-top-shown 1.5s forwards;
+        }
+
+        .header__content {
+          flex-direction: column;
+          gap: 30px;
+        }
+
+        .btn__sign-in {
+          color: $grayscale-2;
+          background-color: $white;
+        }
+      }
+    }
+
+    @media (max-width: $md) {
+      padding: 16px 0;
+    }
+
+    @media (max-width: $sm) {
+      gap: 20px;
+    }
+  }
+
+  &__content {
+    @include row;
+    position: relative;
+
+    gap: 40px;
+
+    @media (max-width: $lg) {
+      gap: 20px;
+
+      justify-content: space-between;
+      width: 100%;
+    }
+  }
+
+  &__line-content {
+    height: 1px;
+    background-color: rgb(217, 217, 217);
+  }
+
+  &__menu {
+    display: flex;
+    align-items: center;
+
+    position: relative;
+
+    @media (max-width: $lg) {
+      display: none;
+    }
+
+    &.active {
+      @media (max-width: $lg) {
+        display: initial;
+
+        animation: flip-top-shown 1.5s forwards;
+
+        .header__menu-link {
+          color: $white;
+        }
+      }
+    }
+  }
+
+  &__menu-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 48px;
+
+    @media (max-width: $lg) {
+      align-items: center;
+      flex-direction: column;
+
+      gap: 25px;
+      justify-content: center;
+    }
+  }
+
+  &__menu-link {
+    transition: $trans-default;
+
+    color: $grayscale-1;
+
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0px;
+
+    @media (max-width: $lg) {
+      font-size: 1.5rem;
+    }
+
+    @media (max-width: $sm) {
+      font-size: 1.25rem;
+    }
+  }
+
+  // Buttons
+  &__buttons {
+    align-items: center;
+    display: none;
+    gap: 8px;
+
+    margin-top: 25px;
+    position: relative;
+
+    @media (min-width: $lg) {
+      @include row;
+      margin: 0;
+    }
+
+    @media (max-width: $lg) {
+      justify-content: center;
+    }
+  }
+
+  // Burger
+
+  &__burger {
+    background: none;
+
+    cursor: pointer;
+
+    display: flex;
+
+    @media (min-width: $lg) {
+      display: none;
+    }
+
+    &.active {
+      position: absolute;
+      right: 0;
+
+      .burger-open {
+        display: none;
+      }
+
+      .burger-close {
+        display: flex;
+        position: relative;
+        animation: 1s ease 0s 1 normal forwards running rotate-close;
+      }
+    }
+
+    .burger-open {
+      opacity: 1;
+      transition: opacity 0.5s;
+      animation: 0.5s ease 0s 1 normal forwards running rotate-open-shown;
+    }
+
+    .burger-close {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+@keyframes toggle-opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes flip-top-shown {
+  0% {
+      opacity: 0;
+      top: -100px;
+  }
+
+  100% {
+      opacity: 1;
+      top: 0px;
+  }
+}
+
+@keyframes rotate-open-shown {
+  100% {
+    transform: rotate(360deg);
+    visibility: visible;
+  }
+}
+
+@keyframes rotate-close {
+  100% {
+    transform: rotate(360deg);
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+

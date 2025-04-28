@@ -1,0 +1,270 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+// Layout
+
+html {
+  font-size: 1rem;
+  scroll-behavior: smooth;
+
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  background-color: $body-bg-color;
+
+  color: $grayscale-1;
+
+  font-family: $main-font;
+  font-weight: normal;
+  font-size: 1rem;
+
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  z-index: 100;
+  position: relative;
+}
+
+.container {
+  box-sizing: border-box;
+
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+
+  max-width: 100%;
+
+  @media (min-width: $xl) {
+    max-width: 1128px;
+  }
+
+  @media (max-width: $xl) {
+    max-width: 960px;
+  }
+
+  @media (max-width: $lg) {
+    max-width: 720px;
+  }
+
+  @media (max-width: $md) {
+    max-width: 540px;
+
+    width: auto;
+  }
+
+  @media (max-width: $sm) {
+    margin: 0 15px;
+  }
+}
+
+.container-fluid {
+  position: relative;
+
+  max-width: 100%;
+  width: 100%;
+
+  @media (max-width: $sm) {
+    width: auto;
+  }
+}
+
+.logo {
+  width: 88px;
+  height: 36px;
+
+  padding: 2px 0;
+
+  img {
+    width: inherit;
+    height: inherit;
+  }
+}
+
+// Text
+.section-title {
+  color: $grayscale-2;
+
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: 0px;
+  text-align: center;
+
+  @media (max-width: $lg) {
+    font-size: 1.75rem;
+    font-weight: 600;
+    line-height: 120%;
+  }
+}
+
+// Tags
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $grayscale-2;
+
+  font-family: $main-font;
+  font-weight: 400;
+
+  margin: 0;
+  padding: 0;
+  position: relative;
+  letter-spacing: normal;
+}
+
+p {
+  font-family: $main-font;
+
+  margin: 0;
+  word-break: break-word;
+  font-weight: 400;
+
+  &:first-child {
+    margin-top: 0px;
+  }
+}
+
+span {
+  font-family: $main-font;
+  font-weight: 400;
+}
+
+ul {
+  font-size: 1rem;
+  font-family: $main-font;
+
+  list-style: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+
+  font-weight: 400;
+
+  @media (min-width: $md) {
+    font-size: 1.15rem;
+  }
+}
+
+input {
+  color: $dark;
+}
+
+input:user-invalid {
+  outline: 2px solid red;
+}
+
+input:user-valid {
+  outline: 2px solid green;
+}
+
+button,
+input,
+select,
+optgroup,
+textarea {
+  font-family: $main-font;
+  margin: 0;
+  font-size: 100%;
+  line-height: 1.15;
+
+  overflow: visible;
+
+  &:focus-visible {
+    outline: 1px solid $grayscale-1;
+  }
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+select,
+input {
+  outline: none;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  appearance: button;
+}
+
+hr,
+img {
+  border: none;
+}
+
+// Links
+a {
+  background-color: transparent;
+
+  font-family: $main-font;
+  text-decoration: none;
+  color: $grayscale-1;
+
+  &:hover {
+    color: $link-hover;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: $link-pressed;
+  }
+
+  &:focus-visible {
+    outline: 3px solid $grayscale-1;
+  }
+}
+
+// Img
+
+.img-responsive {
+  width: auto;
+  margin: 0 auto;
+  max-height: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+img {
+  border-style: none;
+}
+
+img[data-fancybox] {
+  cursor: zoom-in;
+}
+
+// Swiper
+.swiper-slide-active {
+  animation: toggle-opacity 0.4s ease-in 0s 1 forwards;
+}
+
+// Visibility
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.blur {
+  filter: blur(44px);
+  pointer-events: none;
+}
