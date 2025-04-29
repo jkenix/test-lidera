@@ -9,6 +9,11 @@
     @include column;
 
     margin-top: 88px;
+    margin-bottom: 86px;
+  }
+
+  &__title-wrap {
+    position: relative;
   }
 
   &__title {
@@ -39,6 +44,8 @@
 
     @media (max-width: $lg) {
       font-size: 1.5rem;
+
+      margin-top: 25px;
     }
 
     @media (max-width: $md) {
@@ -47,9 +54,6 @@
 
     @media (max-width: $sm) {
       font-size: 1rem;
-      text-align: left;
-
-      margin-top: 10px;
     }
 
     &--mission {
@@ -71,4 +75,33 @@
       }
     }
   }
+
+  // Icon
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  // Video
+  &__play-button {
+    border-radius: $border-rad-play;
+    background: $white;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 72px;
+    height: 72px;
+
+    z-index: 2;
+
+    &.active {
+      display: none;
+    }
+  }
+
+
 }

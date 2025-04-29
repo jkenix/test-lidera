@@ -5,8 +5,13 @@
 // Blocks
 @forward "header";
 @forward "./offer/offer";
-@forward "popup";
+@forward "./offer/fly";
+@forward "./offer/video";
+@forward "features";
 
 // Elements
 @forward "keyframes";
 @forward "btn";
+
+@forward "popup";
+

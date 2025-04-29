@@ -14,16 +14,28 @@ $main-font: "Poppins", Arial, sans-serif;
 $body-bg-color: #ffffff;
 
 // Colors
+$blue: rgb(87, 184, 247);
+$blue-2: rgb(92, 182, 233);
+
 $dark: rgb(0, 0, 0);
+$dark-2: rgb(50, 51, 76);
+
 $grayscale-1: rgba(18, 17, 39, 0.72);
 $grayscale-2: rgb(18, 17, 39);
 
 $indigo-500: rgb(68, 75, 211);
 
 $gray: rgb(137, 137, 137);
+$gray-2: rgb(141, 141, 141);
 
 $white: rgb(255, 255, 255);
 $white-2: rgb(217, 217, 217);
+$white-3: rgb(255, 243, 243);
+
+$yellow: rgb(255, 187, 36);
+
+$slider-btn: rgb(255, 240, 245);
+$slider-content: rgb(157, 9, 124);
 
 // Links
 $link-hover: rgb(68, 75, 211);
@@ -32,9 +44,28 @@ $link-pressed: gray;
 // Border radius
 $border-rad-1: 6px;
 $border-rad-2: 10px;
+$border-rad-3: 12px;
+$border-rad-4: 16px;
+$border-rad-5: 21px;
+$border-rad-6: 24.5px;
+$border-rad-7: 30px;
 
-// Box shadows
-$box-shadow-menu: 0px 0px 40px 0px rgba(0, 0, 0, 0.06);
+$border-rad-play: 100px;
+$border-rad-popup: 16px;
+$border-rad-slider-btn: 32px;
+
+// Linear gradients
+$linear-pink: linear-gradient(
+  180deg,
+  rgb(247, 130, 145),
+  rgb(231, 92, 107) 100%
+);
 
 // Transition
 $trans-default: all 0.1s ease-in-out;
+
+// Box-shadow
+$box-shadow-fly: 0px 40px 80px -16px rgba(0, 0, 0, 0.08);
+$box-shadow-memoji: 0px 16px 30px -6.88px rgba(58, 76, 87, 0.4);
+$box-shadow-pizza: 0px 40px 70px -20px rgba(0, 0, 0, 0.2);
+$box-shadow-slide: 0px 20px 50px 0px rgba(18, 17, 39, 0.08);

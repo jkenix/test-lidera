@@ -1,0 +1,20 @@
+<svg width="48.000000" height="48.000000" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip9_501">
+			<rect id="User Interface / Delivery Truck" rx="0.000000" width="31.000000" height="31.000000" transform="translate(0.500000 16.500000)" fill="white" fill-opacity="0"/>
+		</clipPath>
+		<linearGradient x1="30.000000" y1="0.000000" x2="30.000000" y2="36.000000" id="paint_linear_9_500_0" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#DEDEDE"/>
+			<stop offset="1.000000" stop-color="#DEDEDE" stop-opacity="0.000000"/>
+		</linearGradient>
+	</defs>
+	<path id="Polygon 1" d="M26.81 3.18L15.18 14.81C13.42 16.57 13.42 19.42 15.18 21.18L26.81 32.81C28.57 34.57 31.42 34.57 33.18 32.81L44.81 21.18C46.57 19.42 46.57 16.57 44.81 14.81L33.18 3.18C31.42 1.42 28.57 1.42 26.81 3.18Z" fill="url(#paint_linear_9_500_0)" fill-opacity="1.000000" fill-rule="evenodd"/>
+	<g clip-path="url(#clip9_501)">
+		<path id="Shape" d="M5.33 21.33C3.86 21.33 2.66 22.52 2.66 24L2.66 37.33C2.66 38.8 3.86 40 5.33 40L18.66 40L18.66 24C18.66 22.52 17.47 21.33 16 21.33L5.33 21.33Z" fill="#90ECF4" fill-opacity="1.000000" fill-rule="nonzero"/>
+		<path id="Shape" d="M22.15 25.33L18.66 25.33L18.66 39.99L26.66 39.99C28.13 39.99 29.33 38.8 29.33 37.33L29.33 32.11C29.33 31.36 29.01 30.65 28.46 30.14L23.94 26.02C23.45 25.58 22.81 25.33 22.15 25.33Z" fill="#444BD3" fill-opacity="1.000000" fill-rule="nonzero"/>
+		<path id="Shape" d="M9.33 42.66C10.8 42.66 12 41.47 12 40C12 38.52 10.8 37.33 9.33 37.33C7.86 37.33 6.66 38.52 6.66 40C6.66 41.47 7.86 42.66 9.33 42.66ZM25.88 41.88C26.38 41.38 26.66 40.7 26.66 40L24 40L21.33 40C21.33 40.7 21.61 41.38 22.11 41.88C22.61 42.38 23.29 42.66 24 42.66C24.7 42.66 25.38 42.38 25.88 41.88Z" fill="#444BD3" fill-opacity="1.000000" fill-rule="evenodd"/>
+	</g>
+</svg>

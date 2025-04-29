@@ -1,0 +1,204 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.features {
+  &__content {
+    margin-bottom: 96px;
+    max-width: 1178px;
+
+    @media (max-width: $xl) {
+      max-width: 1010px;
+    }
+
+    @media (max-width: $lg) {
+      max-width: 770px;
+    }
+
+    @media (max-width: $md) {
+      max-width: 590px;
+
+      width: auto;
+    }
+
+    .features__slider {
+      padding: 25px;
+
+      @media (max-width: $sm) {
+        padding: 15px;
+      }
+    }
+
+    .features__slide-wrap {
+      height: 212px;
+    }
+
+    // Btns
+    .features__button-next {
+      position: relative;
+      order: 3;
+      left: 0;
+      top: 0;
+
+      &::after {
+        content: "";
+        width: 16px;
+        height: 16px;
+
+        background: url("/img/icons/arrow-next.svg") no-repeat center;
+      }
+    }
+
+    .features__button-prev {
+      left: auto;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      position: relative;
+
+      &::after {
+        content: "";
+        width: 16px;
+        height: 16px;
+
+        background: url("/img/icons/arrow-prev.svg") no-repeat center;
+      }
+    }
+
+    .features__button-next,
+    .features__button-prev {
+      border-radius: $border-rad-slider-btn;
+      background-color: $slider-btn;
+
+      width: 40px;
+      height: 40px;
+
+      &::after {
+        color: $slider-content;
+        font-size: 25px;
+      }
+
+      &:hover {
+        background: $white;
+
+        &::after {
+          color: $dark;
+        }
+      }
+    }
+
+    // Pagination
+    .features__pagination {
+      align-items: center;
+      display: flex;
+      order: 2;
+
+      max-width: max-content;
+
+      left: 0;
+      bottom: 0;
+
+      position: relative;
+
+      overflow: hidden;
+    }
+
+    .features__pagination-bullet {
+      min-width: 4px;
+      min-height: 4px;
+    }
+
+    .features__pagination-bullet--active {
+      border: 2px solid $slider-content;
+      background-color: $white;
+
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      min-height: 20px;
+      min-width: 20px;
+
+      &::after {
+        border-radius: 10px;
+
+        content: "";
+        width: 8px;
+        height: 8px;
+
+        display: block;
+        background-color: $slider-content;
+      }
+    }
+  }
+
+  &__title {
+    text-align: left;
+
+    margin-top: 15px;
+    max-width: 604px;
+  }
+
+  &__dop-title {
+    color: $indigo-500;
+
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 170%;
+    letter-spacing: 0.8px;
+
+    text-transform: uppercase;
+  }
+
+  &__title,
+  &__dop-title {
+    padding-left: 25px;
+
+    @media (max-width: $sm) {
+      padding-left: 15px;
+    }
+  }
+
+  &-block {
+  }
+
+  // Slider
+  &__slider {
+    margin-top: 25px;
+
+    .swiper-slide {
+    }
+
+    .swiper-wrapper {
+    }
+  }
+
+  &__slide-wrap {
+    max-width: 216px;
+    max-height: 212px;
+
+    padding: 56px 24px;
+
+    border-radius: $border-rad-3;
+    box-shadow: $box-shadow-slide;
+
+    @media (max-width: $sm) {
+      max-width: 250px;
+      max-height: 400px;
+      padding: 32px 20px;
+    }
+  }
+
+  &__slide {
+    @include column;
+  }
+
+  // Pagination, navigation
+  &-controls {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+
+    margin-top: 30px;
+  }
+}

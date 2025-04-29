@@ -267,4 +267,7 @@ img[data-fancybox] {
 .blur {
   filter: blur(44px);
   pointer-events: none;
+
+  height: 100vh;
+  width: 100%;
 }
