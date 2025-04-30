@@ -12,6 +12,21 @@ import { ViteImageOptimizer } from "vite-plugin-image-optimizer";
 import { ViteMinifyPlugin } from "vite-plugin-minify";
 // import { manualChunksPlugin } from "vite-plugin-webpackchunkname";
 import handlebars from "vite-plugin-handlebars";
+
+//
+const jsToBottomNoModule = () => {
+  return {
+    name: "no-attribute",
+    transformIndexHtml(html) {
+      html = html.replace(`type="module" crossorigin`, "")
+      let scriptTag = html.match(/<script[^>]*>(.*?)<\/script[^>]*>/)[0]
+      console.log("\n SCRIPT TAG", scriptTag, "\n")
+      html = html.replace(scriptTag, "")
+      html = html.replace("<!-- # INSERT SCRIPT HERE -->", scriptTag)
+      return html;
+    }
+  }
+}
 // Config
 export default defineConfig({
   root: "",
@@ -23,6 +38,7 @@ export default defineConfig({
     },
   },
   plugins: [
+    jsToBottomNoModule(),
     ViteMinifyPlugin({}),
     ViteImageOptimizer({
       test: /\.(jpe?g|png|gif|tiff|webp|svg|avif)$/i,
