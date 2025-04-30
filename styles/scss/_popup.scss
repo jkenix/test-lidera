@@ -190,6 +190,10 @@
   &-img {
     display: none;
 
+    img {
+    border-radius: $border-rad-popup-image;
+    }
+
     @media (min-width: $lg) {
       display: flex;
     }
