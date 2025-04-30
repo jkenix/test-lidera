@@ -73,6 +73,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Добавляем класс скрытия прокрутки
     body.classList.add("overflow-hidden");
+
+    // Остановка видео при открытии попапа
+    video.removeAttribute("controls", "controls"); // Удаляем атрибут controls
+    video.pause(); // Останавливаем видео
+    playButton.classList.remove("active"); // Снова показываем иконку запуска
   }
 
   // Назначаем обработчик клика каждой кнопке
@@ -80,14 +85,10 @@ document.addEventListener("DOMContentLoaded", () => {
     button.addEventListener("click", showPopup);
   });
 
-  // Функция для удаления класса active из попапа, снятие блюра, остановка видео, закрытие меню
+  // Функция для удаления класса active из попапа, снятие блюра, удаление overflow-hidden
   function removeActiveClass() {
     popupJoin.classList.remove("active");
     wrapper.classList.remove("blur");
-    // Video классы
-    video.removeAttribute("controls", "controls"); // добавляем атрибут controls
-    video.pause(); // запускаем воспроизведение видео
-    playButton.classList.remove("active");
 
     // Удаляем класс overflow-hidden из body, ТОЛЬКО если нет активного класса Header menu (.header active)
     if (!header.classList.contains("active")) {
