@@ -62,21 +62,6 @@ document.addEventListener("DOMContentLoaded", () => {
     ".btn__sign-up, .btn__get-started, .btn__sign-up-free"
   );
 
-  // Функция для прокрутки к элементу Popup по центру окна просмотра
-  function scrollToPopup() {
-    // Получаем координаты элемента
-    const rect = popupJoin.getBoundingClientRect();
-    // Вычисляем верхнюю позицию окна для прокрутки
-    const scrollTo =
-      window.scrollY + rect.top - window.innerHeight / 2 + rect.height / 2;
-
-    // Прокручиваем к вычисленной позиции
-    window.scrollTo({
-      top: scrollTo,
-      behavior: "instant",
-    });
-  }
-
   // Функция для обработки клика и вызова Popup
   function showPopup() {
     // Убираем класс active у всех уже открытых popup
@@ -85,9 +70,6 @@ document.addEventListener("DOMContentLoaded", () => {
     // Добавляем класс active к popup
     popupJoin.classList.add("active");
     wrapper.classList.add("blur");
-
-    // Вызываем функцию прокрутки к Popup
-    scrollToPopup();
 
     // Добавляем класс скрытия прокрутки
     body.classList.add("overflow-hidden");
@@ -186,5 +168,4 @@ document.addEventListener("DOMContentLoaded", () => {
       },
     },
   });
-
 });

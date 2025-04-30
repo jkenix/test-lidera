@@ -17,11 +17,18 @@ $body-bg-color: #ffffff;
 $blue: rgb(87, 184, 247);
 $blue-2: rgb(92, 182, 233);
 
+$cyan-200: rgb(144, 236, 244);
+
 $dark: rgb(0, 0, 0);
 $dark-2: rgb(50, 51, 76);
 
 $grayscale-1: rgba(18, 17, 39, 0.72);
 $grayscale-2: rgb(18, 17, 39);
+$grayscale-3: rgba(18, 17, 39, 0.12);
+$grayscale-4: rgba(18, 17, 39, 0.56);
+$grayscale-5: rgba(18, 17, 39, 0.4);
+
+$grayscale-50: rgb(249, 249, 251);
 
 $indigo-500: rgb(68, 75, 211);
 
@@ -31,6 +38,8 @@ $gray-2: rgb(141, 141, 141);
 $white: rgb(255, 255, 255);
 $white-2: rgb(217, 217, 217);
 $white-3: rgb(255, 243, 243);
+
+$white-op-5: rgba(255, 255, 255, 0.56);
 
 $yellow: rgb(255, 187, 36);
 
@@ -53,6 +62,7 @@ $border-rad-7: 30px;
 $border-rad-play: 100px;
 $border-rad-popup: 16px;
 $border-rad-slider-btn: 32px;
+$border-rad-tariff: 8px;
 
 // Linear gradients
 $linear-pink: linear-gradient(
@@ -69,3 +79,4 @@ $box-shadow-fly: 0px 40px 80px -16px rgba(0, 0, 0, 0.08);
 $box-shadow-memoji: 0px 16px 30px -6.88px rgba(58, 76, 87, 0.4);
 $box-shadow-pizza: 0px 40px 70px -20px rgba(0, 0, 0, 0.2);
 $box-shadow-slide: 0px 20px 50px 0px rgba(18, 17, 39, 0.08);
+$box-shadow-optimize: 0px 7px 30px 0px rgba(18, 17, 39, 0.12);

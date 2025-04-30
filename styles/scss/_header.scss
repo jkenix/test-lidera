@@ -44,7 +44,8 @@
         flex-direction: column;
 
         height: 100vh;
-        overflow: auto;
+        overflow-y: auto;
+        overflow-x: hidden;
 
         .header__logo {
           display: flex;

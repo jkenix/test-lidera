@@ -4,10 +4,17 @@
 
 // Blocks
 @forward "header";
+
 @forward "./offer/offer";
 @forward "./offer/fly";
 @forward "./offer/video";
+
 @forward "features";
+@forward "optimize";
+@forward "tariff";
+@forward "boost-prod";
+
+@forward "footer";
 
 // Elements
 @forward "keyframes";

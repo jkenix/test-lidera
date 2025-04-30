@@ -9,7 +9,17 @@
     @include column;
 
     margin-top: 88px;
-    margin-bottom: 86px;
+    margin-bottom: 87px;
+
+    @media (min-width: $lg) {
+      &:has(.offer__video.active) {
+        margin-bottom: 163px;
+      }
+    }
+
+    @media (max-width: $lg) {
+      margin-bottom: 82px;
+    }
   }
 
   &__title-wrap {
@@ -28,6 +38,10 @@
 
     @media (max-width: $lg) {
       font-size: 2rem;
+    }
+
+    @media (max-width: $sm) {
+      font-size: 1.75rem;
     }
   }
 
@@ -102,6 +116,4 @@
       display: none;
     }
   }
-
-
 }

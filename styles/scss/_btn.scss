@@ -19,6 +19,7 @@
 
   &:focus-visible {
     outline: 2px solid $grayscale-1;
+    opacity: 0.7;
   }
 
   span {
@@ -31,6 +32,8 @@
     box-sizing: border-box;
 
     max-width: 178px;
+
+    height: 100%;
     min-height: 24px;
 
     @media (max-width: $lg) {
@@ -45,6 +48,33 @@
       background-color: $grayscale-2;
     }
   }
+
+  // Colors
+  &__indigo {
+    background-color: $indigo-500;
+
+    color: $white;
+  }
+
+  &__white {
+    background-color: $white;
+
+    color: $indigo-500;
+
+    &:hover {
+      background-color: $dark;
+
+      color: $white;
+    }
+
+    &:active {
+      background-color: $grayscale-2;
+
+      color: $gray;
+    }
+  }
+
+  // Sign
 
   &__sign-in {
     color: $grayscale-2;
@@ -63,10 +93,6 @@
   }
 
   &__sign-up {
-    background-color: rgb(68, 75, 211);
-
-    color: $white;
-
     min-width: 102px;
   }
 
@@ -93,6 +119,24 @@
     text-align: left;
 
     min-height: 40px;
-    height: 40px;
+  }
+
+  &__sign-up-free {
+    border-radius: $border-rad-tariff;
+
+    min-height: 52px;
+
+    max-width: 186px;
+    width: 100%;
+  }
+
+  // Tariff
+  &__get-started {
+    border-radius: $border-rad-tariff;
+
+    min-height: 52px;
+
+    max-width: 195px;
+    width: 100%;
   }
 }

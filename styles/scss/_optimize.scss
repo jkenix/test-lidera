@@ -1,0 +1,136 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.optimize {
+  background-color: $grayscale-50;
+
+  &__content {
+    padding: 96px 0;
+
+    @media (min-width: $lg) {
+      margin: 96px auto 0;
+    }
+
+    @media (max-width: $lg) and (min-width: $sm) {
+      margin: 48px auto 0;
+    }
+
+    @media (max-width: $lg) {
+      padding: 48px 0;
+    }
+  }
+
+  &__title {
+    text-align: left;
+    margin-top: 14px;
+  }
+
+  // Blocks
+  &-blocks {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+    row-gap: 45px;
+
+    margin-top: 45px;
+
+    @media (max-width: $lg) {
+      flex-direction: column;
+
+      .optimize__block {
+        max-width: 100%;
+      }
+    }
+  }
+
+  &__block {
+    @include column;
+    width: 50%;
+
+    @media (max-width: $lg) {
+      width: 100%;
+    }
+  }
+
+  &__block-improve {
+    max-width: 456px;
+  }
+
+  &__block-max {
+    max-width: 552px;
+  }
+
+  &__block-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+
+  &__block-desc {
+    font-size: 1rem;
+    line-height: 180%;
+    letter-spacing: 0px;
+    text-align: left;
+
+    margin-top: 12px;
+
+    max-width: 456px;
+
+    @media (max-width: $sm) {
+      font-size: 0.875rem;
+    }
+  }
+
+  &__block-img {
+    border-radius: $border-rad-3;
+    box-shadow: $box-shadow-optimize;
+
+    margin-top: 32px;
+
+    @media (max-width: $lg) {
+      margin-top: 20px;
+    }
+  }
+
+  // List
+  &__list {
+    @include column;
+
+    margin-top: 32px;
+    gap: 8px;
+  }
+
+  &__list-item {
+    align-items: center;
+    display: flex;
+    gap: 13px;
+
+    font-size: 0.875rem;
+    line-height: 180%;
+    letter-spacing: 0px;
+    text-align: left;
+
+    @media (max-width: $sm) {
+      font-size: 0.75rem;
+    }
+
+    &::before {
+      background: $cyan-200;
+      border-radius: $border-rad-7;
+
+      background-image: url("/img/icons/mark.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+
+      content: "";
+
+      display: flex;
+
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
