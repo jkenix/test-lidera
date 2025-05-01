@@ -156,6 +156,10 @@
       height: 100%;
       max-height: 430px;
       align-items: center;
+
+      .popup__close {
+        position: fixed;
+      }
     }
 
     @media (max-width: $sm) and (orientation: portrait) {

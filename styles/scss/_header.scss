@@ -40,9 +40,12 @@
     padding: 32px 0px;
 
     &.active {
+      @media (max-width: $lg) and (orientation: landscape) {
+        padding-bottom: 50px;
+      }
+
       @media (max-width: $lg) {
         flex-direction: column;
-
         height: 100vh;
         overflow-y: auto;
         overflow-x: hidden;
