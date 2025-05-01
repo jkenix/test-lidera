@@ -30,6 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function toggleClassesMenu() {
     const headerInner = document.querySelector(".header__inner");
 
+    body.classList.toggle("overflow-hidden");
     ham.classList.toggle("active");
     header.classList.toggle("active");
     headerInner.classList.toggle("active");
@@ -38,8 +39,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Function to handle hamburger click
   ham.addEventListener("click", function (event) {
-    body.classList.toggle("overflow-hidden");
-
     toggleClassesMenu();
   });
 
