@@ -2,11 +2,11 @@
 
 Цель: Сверстать макет по ТЗ. Макеты лежат в директории **Web**.   
 
-[ТЗ здесь](https://github.com/jkenix/test-lidera/blob/main/web/ТЗ.txt) 🔗
+[ТЗ здесь](https://github.com/jkenix/test-lidera/blob/main/web/ТЗ.txt)  🔗
 
-[Посмотреть макет](https://www.figma.com/design/k6PXOQF3kPbtchcouLppli/Test?node-id=0-1&p=f&t=Pjx1828Zh3Y8fqZy-0) ✏️
+[Посмотреть макет](https://www.figma.com/design/k6PXOQF3kPbtchcouLppli/Test?node-id=0-1&p=f&t=Pjx1828Zh3Y8fqZy-0)  ✏️
 
-[Посмотреть проект](https://calm-halva-18d76f.netlify.app/) 🌐
+[Посмотреть проект](https://calm-halva-18d76f.netlify.app/)  🌐
 
 ## Порядок запуска проекта:   
 1. Открыть текущую директорию в редакторе.
